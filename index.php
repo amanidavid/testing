@@ -1,6 +1,7 @@
 <?php
 include'car.php';
 include'student.php';
+include'landcruiserv8.php';
 
 #ob_start(); //start an output buffer
 $callable=function (){
@@ -94,6 +95,11 @@ echo "<br/>";
 $student= new Student("amani david", "male","amanidavid@gmail.com",100000,"IMC/BCS/2124687","Computer Science");
 
 echo $student->getDetails();
+echo"<br/>";
+echo"<br/>";
+
+$landcruiser = new landCruiser("Toyota","camry","2022","$3000,000,000","white",4);
+echo $landcruiser->displayCarInfo();
 
 /*$person1->setMail("amani@gmail.com");
 echo $person1->getMail();
